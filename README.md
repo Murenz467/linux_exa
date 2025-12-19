@@ -9,10 +9,10 @@
 ---
 Table of Contents
 
-Project Overview
-Technologies Used
-System Architecture
-Installation Guide
+1.Project Overview
+2.Technologies Used
+3.System Architecture
+4.Installation Guide
 User Guide
 Database Schema
 Features Implemented
@@ -20,3 +20,4 @@ Bonus Features
 Challenges and Solutions
 Code Structure
 Future Enhancements
+
