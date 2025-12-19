@@ -7,3 +7,16 @@
 **Date:** December 2025  
 
 ---
+Table of Contents
+
+Project Overview
+Technologies Used
+System Architecture
+Installation Guide
+User Guide
+Database Schema
+Features Implemented
+Bonus Features
+Challenges and Solutions
+Code Structure
+Future Enhancements
