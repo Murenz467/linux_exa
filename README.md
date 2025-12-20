@@ -18,8 +18,8 @@ Virtual Server Manager is a web application that simplifies VirtualBox VM manage
 ### Key Features
 - Create VMs with custom CPU, RAM, storage configurations
 - Start/stop/delete VMs with one click
-- Real-time CPU and memory monitoring (**Bonus +1**)
-- Clone VMs instantly (**Bonus +1**)
+- Real-time CPU and memory monitoring 
+- Clone VMs instantly 
 - Automatic Debian ISO attachment for bootable VMs
 - Track installed services and users
 - Clean, responsive web interface
@@ -109,45 +109,45 @@ http://localhost:5000
 
 ## 5. Features Implementation
 
-### Core Features (40 marks)
+### Core Features
 
-**1. Database (3/3):** Three properly structured tables with foreign keys and cascade delete.
+**1. Database :** Three properly structured tables with foreign keys and cascade delete.
 
-**2. Web Pages (5/5):** 
+**2. Web Pages :** 
 - Dashboard (index.html) - Lists all VMs
 - Create form (create.html) - Configure new VMs
 - Details page (details.html) - View VM info, services, users
 - Monitor page (monitor.html) - Real-time stats
 
-**3. Application Logic (7/7):**
+**3. Application Logic:**
 - Full CRUD operations
 - Input validation
 - Error handling with flash messages
 - Database transactions
 - Script execution with subprocess
 
-**4. Shell Scripts (7/7):**
+**4. Shell Scripts:**
 - create_vm.sh - Creates VMs with ISO attachment
 - start_vm.sh - Starts VMs in headless mode
 - stop_vm.sh - Gracefully stops VMs
 - destroy_vm.sh - Deletes VMs completely
 - Plus 4 more for cloning, monitoring, services, users
 
-**5. Integration (3/3):** Seamless Flask → Scripts → VirtualBox → Database sync.
+**5. Integration :** Seamless Flask → Scripts → VirtualBox → Database sync.
 
-**6. Documentation (5/5):** This comprehensive PDF.
+**6. Documentation :** This comprehensive PDF.
 
-**7. Code Quality (2/2):** Clean structure, comments, error handling.
+**7. Code Quality :** Clean structure, comments, error handling.
 
-### Bonus Features (+2 marks)
+### Bonus Features 
 
-**Clone Server (+1):**
+**Clone Server :**
 - One-click VM duplication
 - Copies all settings, services, users
 - New UUID and disk file
 - Implementation: `clone_vm.sh` + `/vm/clone/<id>` route
 
-**Real-time Monitoring (+1):**
+**Real-time Monitoring:**
 - Live CPU and memory stats
 - Updates every 3 seconds via AJAX
 - Visual progress bars
@@ -289,9 +289,7 @@ All scripts follow this structure:
 
 ### Demo Script (Practiced 3+ times)
 
-**Part 1: Show Code (3 minutes)**
-
-"Good afternoon. Let me show you the project structure."
+**Part 1: Show Code **
 
 *Open VS Code with project files*
 
@@ -300,15 +298,15 @@ All scripts follow this structure:
 - **scripts/:** "Eight bash scripts for VirtualBox operations"
 - **database.db:** "SQLite database with three tables"
 
-**Part 2: Live Demo (8 minutes)**
+**Part 2: Live Demo **
 
 "Now let me demonstrate the application running."
 
-1. **Dashboard (30 sec):**
+1. **Dashboard :**
    - Open http://localhost:5000
    - "Here are my existing VMs with status indicators"
 
-2. **Create New VM (2 min):**
+2. **Create New VM :**
    - Click "+ New Server"
    - Fill form: name=demo-server, OS=Debian, 2 CPU, 1024 RAM
    - Select services: nginx, mysql
@@ -316,18 +314,18 @@ All scripts follow this structure:
    - Click "Create Server"
    - "Notice the success message and new VM appears"
 
-3. **Show in VirtualBox (1 min):**
+3. **Show in VirtualBox :**
    - Open VirtualBox Manager
    - "The VM was actually created with all specifications"
    - "Debian ISO is attached - it's bootable"
 
-4. **Start VM (1 min):**
+4. **Start VM :**
    - Back to web interface
    - Click "Start" button
    - Refresh - status shows RUNNING
    - Open VirtualBox - VM is running
 
-5. **Real-time Monitoring (1 min):**
+5. **Real-time Monitoring :**
    - Click "📊 Monitor"
    - "CPU and memory stats update every 3 seconds"
    - "This is bonus feature #1 for +1 mark"
@@ -343,55 +341,13 @@ All scripts follow this structure:
    - Click "Details"
    - "Shows all VM info, services, and users"
 
-8. **Stop and Delete (30 sec):**
+8. **Stop and Delete :**
    - Click "Stop" - status changes to STOPPED
    - Click "Delete" - confirm - VM removed
 
-**Part 3: Answer Questions (4 minutes)**
 
-Be prepared to explain:
-- How Flask routes work
-- How shell scripts communicate with VirtualBox
-- Database relationships and foreign keys
-- Why you chose certain technologies
-- Challenges faced and solutions
 
-### Evaluation Checklist
-
-**Functionality (28/40 marks = 70%):**
-- ✅ Create VMs with custom settings
-- ✅ View all VMs in list
-- ✅ Start/stop VMs (status updates)
-- ✅ Delete VMs completely
-- ✅ View VM details
-- ✅ Track services and users
-- ✅ Scripts execute correctly
-- ✅ Data persists in database
-
-**Code Quality (6/40 marks = 15%):**
-- ✅ Organized file structure
-- ✅ Comments in code
-- ✅ Error handling
-- ✅ Consistent naming
-
-**Documentation (4/40 marks = 10%):**
-- ✅ Clear explanations
-- ✅ Installation instructions
-- ✅ Screenshots
-- ✅ Technologies listed
-
-**Presentation (2/40 marks = 5%):**
-- ✅ Smooth demo
-- ✅ Can explain code
-- ✅ Answers questions confidently
-
-**Bonus (+2 marks):**
-- ✅ Clone feature (+1)
-- ✅ Monitoring (+1)
-
----
-
-## 13. Project Deliverables
+## 12. Project Deliverables
 
 ### Folder Structure for Submission
 
@@ -464,64 +420,20 @@ Open browser: http://localhost:5000
 - Virtualization: VirtualBox, Bash scripts
 
 ## Author
-[Your Name]
+Murenzi Charles
 COSC 8312 - December 2025
 
-## License
-Academic project - not for redistribution
-```
+**Name:** Murenzi Charles
 
-### requirements.txt
+**Student ID:** 27386
 
-```
-Flask==3.1.0
-```
-
----
-
-## 14. Academic Integrity Declaration
-
-I hereby declare that this project is entirely my own work. I have:
-
-- **Written all code myself** - Every line of Python, HTML, CSS, JavaScript, and Bash scripts
-- **Used official documentation** as learning resources:
-  - Flask documentation
-  - VirtualBox manual
-  - SQLite documentation
-  - MDN Web Docs for HTML/CSS/JavaScript
-- **Followed tutorials** for concepts but implemented my own solutions
-- **Not copied from classmates** or submitted downloaded code
-- **Can explain every part** of my implementation in detail
-- **Tested all features** to ensure they work correctly
-
-I understand that:
-- Plagiarism is a serious academic offense
-- I must be able to explain my code during the demo
-- Any copied code will result in project failure
-- This project represents my understanding of the course material
-
-**Signature:** ___________________________
-
-**Name:** [Your Full Name]
-
-**Student ID:** [Your ID]
-
-**Date:** December 2025
+**Date:** 21 December 2025
 
 ---
 
 ## 15. Conclusion
 
 Virtual Server Manager successfully delivers all project requirements plus two bonus features. The application provides a professional, user-friendly interface for VirtualBox management, making virtualization accessible to users of all skill levels.
-
-**Achievements:**
-- ✅ All 40 base marks delivered
-- ✅ +2 bonus marks (Clone + Monitor)
-- ✅ Fully functional, bootable VMs
-- ✅ Clean architecture and code
-- ✅ Comprehensive documentation
-
-**Total Score: 42/40 (105%)**
 
 **Key Learnings:**
 - Integration across multiple technologies (Python, SQL, Bash, VirtualBox)
@@ -552,7 +464,6 @@ VirtualServerManager/
     ├── install_service.sh (45 lines)
     └── manage_users.sh (50 lines)
 
-Total: ~1,615 lines of code
 ```
 
 ---
@@ -571,6 +482,7 @@ Total: ~1,615 lines of code
 ---
 
 *End of Documentation*
+
 
 
 
