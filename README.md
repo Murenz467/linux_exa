@@ -5,7 +5,8 @@
 **Course:** COSC 8312 Introduction to Linux  
 **Instructor:** Elie Kayitare  
 **Date:** December 2025  
-**Student:** [Your Name]
+**Student:** Murenzi Charles
+**ID:**27386
 
 ---
 
@@ -570,6 +571,7 @@ Total: ~1,615 lines of code
 ---
 
 *End of Documentation*
+
 
 
 
